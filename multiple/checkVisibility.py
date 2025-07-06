@@ -135,7 +135,7 @@ def main() -> int:
 		if arr is None:
 			continue
 		isASuccess = True
-		for t in range(1, 10):
+		for t in range(10):
 			outputFp = os.path.join(os.path.join(outputFolderPath, str(t)), item)
 			if not add_mal(arr.copy(), outputFp, t, length):
 				isASuccess = False
