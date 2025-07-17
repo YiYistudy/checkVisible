@@ -125,7 +125,7 @@ def add_mal(arr, outputFilePath, add_type, length, forceUpdate:bool = False) -> 
 def main() -> int:
 	successCnt = 0
 	totalCnt = 0
-	for item in tqdm(os.listdir(inputFolderPath), ncols = ncols):
+	for item in tqdm(sorted(os.listdir(inputFolderPath)), ncols = ncols):
 		totalCnt += 1
 		inputFilePath = os.path.join(inputFolderPath, item)
 		try:
